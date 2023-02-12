@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+:root {
+    --Verydarkbluemainbackground: hsl(233, 47%, 7%);
+    --Darkdesaturatedbluecardbackground: hsl(244, 38%, 16%);
+    --Softvioletaccent: hsl(277, 64%, 61%);
+    --Whitemain-heading-stats: hsl(0, 0%, 100%);
+    --Slightly-transparent-white-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --Slightly-transparent-white-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Verydarkbluemainbackground);
+}
+
+.card {
+    width: 1250px;
+    height: 500px;
+    background-color: var(--Darkdesaturatedbluecardbackground);
+    border-radius: 10px;
+    display: flex;
+}
+
+.leftsec {
+    width: 54%;
+    height: 100%;
+}
+
+.container {
+    width: 77%;
+    margin: auto;
+}
+
+.text {
+    margin-top: 80px;
+    margin-right: 60px;
+    margin-bottom: 75px;
+}
+
+.text h2 {
+    font-size: 40px;
+    color: var(--Whitemain-heading-stats);
+    margin-bottom: 30px
+}
+
+.text span {
+    color: var(--Softvioletaccent);
+}
+
+.text p {
+    color: var(--Slightly-transparent-white-main-paragraph);
+    line-height: 28px;
+    width: 90%;
+    font-size: 16px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.block {
+    color: var(--Whitemain-heading-stats);
+    display: flex;
+    flex-direction: column;
+}
+
+.statenum {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.stateword {
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--Slightly-transparent-white-stat-headings);
+}
+
+.rightsec {
+    width: 52%;
+    height: 100%;
+    background-image: url('../images/image-header-desktop.jpg');
+    background-color: var(--Softvioletaccent);
+    opacity: .5;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.image-overlay{
+    width: 100%;
+    height: 100%;
+    background-color:hsla(288, 88%, 55%, 0.281);
+    filter: contrast(3);
+}
