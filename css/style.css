@@ -29,7 +29,7 @@ main {
 }
 
 .card {
-    width: 90%;
+    width: 80%;
     min-height: 500px;
     background-color: var(--Darkdesaturatedbluecardbackground);
     border-radius: 10px;
@@ -73,6 +73,8 @@ main {
     display: flex;
     justify-content: space-between;
     width: 80%;
+    padding: 20px;
+
 }
 
 .block {
@@ -97,18 +99,13 @@ main {
 .rightsec {
     width: 52%;
     background-image: url('../images/image-header-desktop.jpg');
-    background-color: var(--Softvioletaccent);
-    opacity: .5;
     background-repeat: no-repeat;
     background-size: cover;
+    background-color: 	hsl(277, 100%, 69%);
+    background-blend-mode: multiply;
+    opacity: 0.9;
 }
 
-.image-overlay {
-    width: 100%;
-    height: 100%;
-    background-color: hsla(288, 88%, 55%, 0.281);
-    filter: contrast(3);
-}
 
 @media screen and (max-width: 500px) {
     .card {
@@ -133,6 +130,6 @@ main {
     .rightsec,
     .image-overlay {
         width: 100%;
-        height:250px;
+        height: 250px;
     }
 }
